@@ -1,0 +1,6 @@
+# Mac related files
+.DS_Store
+
+# Internal files for preperation
+cmd/
+csv/
