@@ -17,9 +17,9 @@ $ go get github.com/trk54ylmz/identitycheck/v0.1
 To apply filtering the package needs name for 
 
 ```go
-ic, err := NewIdentityCheck()
+ic, err := identitycheck.NewIdentityCheck()
 
-person := new(Person)
+person := new(identitycheck.Person)
 person.Name = "Barack Obama"
 
 results, err := ic.Check(person)
