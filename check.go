@@ -3,6 +3,7 @@ package identitycheck
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"path/filepath"
 	"strings"
 
@@ -51,11 +52,16 @@ func (i *IdentityCheck) Check(person *Person) (*[]Person, error) {
 
 	f := func(k []byte) error {
 		kp := strings.Split(string(k), ".")
+		ik := []byte("data." + kp[2])
 
 		// read person data from database
-		po, err := i.person.Get([]byte("data." + kp[2]))
+		po, err := i.person.Get(ik)
 
 		if err != nil {
+			if err == bitcask.ErrKeyNotFound {
+				return errors.New(fmt.Sprintf("the key %s does not exist", string(ik)))
+			}
+
 			return err
 		}
 
@@ -76,10 +82,6 @@ func (i *IdentityCheck) Check(person *Person) (*[]Person, error) {
 	err := i.index.Scan([]byte("idx."+hash), f)
 
 	if err != nil {
-		if err == bitcask.ErrKeyNotFound {
-			return nil, errors.New("")
-		}
-
 		return nil, err
 	}
 
