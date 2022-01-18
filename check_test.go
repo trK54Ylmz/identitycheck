@@ -12,10 +12,9 @@ func TestSimple(t *testing.T) {
 		t.Error(err)
 	}
 
-	p := new(Person)
-	p.Name = "Barack Obama"
+	name := "Barack Obama"
 
-	ps, err := c.Check(p)
+	ps, err := c.Check(name)
 
 	if err != nil {
 		t.Error(err)

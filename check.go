@@ -44,9 +44,9 @@ func NewIdentityCheck() (*IdentityCheck, error) {
 }
 
 // Check finds given person from PEP and sanctions lists
-func (i *IdentityCheck) Check(person *Person) (*[]Person, error) {
+func (i *IdentityCheck) Check(name string) (*[]Person, error) {
 	// create metaphone hash for given name
-	hash := phonetics.EncodeMetaphone(person.Name)
+	hash := phonetics.EncodeMetaphone(name)
 
 	var ps []Person
 

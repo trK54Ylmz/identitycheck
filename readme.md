@@ -19,10 +19,9 @@ The package needs name for filtering out results.
 ```go
 ic, err := identitycheck.NewIdentityCheck()
 
-person := new(identitycheck.Person)
-person.Name = "Barack Obama"
+name := "Barack Obama"
 
-results, err := ic.Check(person)
+results, err := ic.Check(name)
 ```
 
 Result objects are JSON serializable, example output will be like,
