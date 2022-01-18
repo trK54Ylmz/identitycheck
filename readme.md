@@ -1,4 +1,4 @@
-### KYC/AML person check
+### KYC/AML check
 
 The package provides a level of know your customer service for banking and other financial services.
 
@@ -14,7 +14,7 @@ $ go get github.com/trk54ylmz/identitycheck/v0.1
 
 #### Usage
 
-To apply filtering the package needs name for 
+The package needs name for filtering out results.
 
 ```go
 ic, err := identitycheck.NewIdentityCheck()
