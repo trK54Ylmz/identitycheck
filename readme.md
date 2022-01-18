@@ -44,8 +44,7 @@ Result objects are JSON serializable, example output will be like,
             "Baracus Obama",
             "ബറാക്ക് ഒബാമ",
             "Барақ Обама",
-            "ባራክ ኦባማ",
-            ...
+            "ባራክ ኦባማ"
         ],
         "birth_date": "1961-08-04T00:00:00Z",
         "country": {
@@ -53,7 +52,6 @@ Result objects are JSON serializable, example output will be like,
             "iso": "USA",
             "name": "United States of America"
         }
-    },
-    ...
+    }
 ]
 ```
