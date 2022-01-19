@@ -57,7 +57,7 @@ Result objects are JSON serializable, example output will be like,
 ]
 ```
 
-### Stats
+#### Stats
 
 You can see below the entry count by top 30 countries,
 
