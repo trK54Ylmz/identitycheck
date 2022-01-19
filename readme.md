@@ -57,8 +57,8 @@ Result objects are JSON serializable, example output will be like,
 
 ### Stats
 
-You can see below the entry count by top 30 country,
+You can see below the entry count by top 30 countries,
 
 <p align="center">
-    <img src="https://github.com/trK54Ylmz/identitycheck/blob/develop/country-stat.png?raw=true" width="300">
+    <img src="https://github.com/trK54Ylmz/identitycheck/blob/develop/country-stat.png?raw=true" width="580">
 </p>
