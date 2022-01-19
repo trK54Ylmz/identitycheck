@@ -2,7 +2,7 @@
 
 The package provides a level of know your customer service for banking and other financial services.
 
-Note: They may have some missing records. The source file will be populated from time to time.
+Note: They may have some missing records. The source file will be populated from time to time. The current PEP and sanctions entry count is 178866.
 
 #### Install
 
