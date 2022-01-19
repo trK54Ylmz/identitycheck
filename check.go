@@ -2,7 +2,6 @@ package identitycheck
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"path/filepath"
 	"strings"
@@ -59,7 +58,7 @@ func (i *IdentityCheck) Check(name string) (*[]Person, error) {
 
 		if err != nil {
 			if err == bitcask.ErrKeyNotFound {
-				return errors.New(fmt.Sprintf("the key %s does not exist", string(ik)))
+				return fmt.Errorf("the key %s does not exist", string(ik))
 			}
 
 			return err
