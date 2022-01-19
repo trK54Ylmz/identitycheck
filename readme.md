@@ -11,7 +11,7 @@ Note: They may have some missing records. The source file will be populated from
 To start using identity check, install Go 1.16 or above. This package need Go modules to install. Run the following command to retrieve the library.
 
 ```bash
-$ go get github.com/trk54ylmz/identitycheck/v0.1
+$ go get github.com/trk54ylmz/identitycheck/v0.2
 ```
 
 #### Usage
