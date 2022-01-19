@@ -1,5 +1,7 @@
 ### KYC/AML check
 
+[![Build](https://github.com/trK54Ylmz/identitycheck/actions/workflows/base.yml/badge.svg)](https://github.com/trK54Ylmz/identitycheck/actions/workflows/base.yml)
+
 The package provides a level of know your customer service for banking and other financial services.
 
 Note: They may have some missing records. The source file will be populated from time to time. The current PEP and sanctions entry count is 178866.
